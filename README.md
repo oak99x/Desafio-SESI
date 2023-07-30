@@ -1,4 +1,4 @@
-# Desafio SESI: Formulário Interativo com HTML, CSS e JavaScript
+# Desafio SESI: Landing Page com HTML, CSS e JavaScript
 
 ## Introdução
 
@@ -11,6 +11,15 @@ O código foi desenvolvido de forma simples e com foco em JavaScript puro, mostr
 Ao optar por utilizar JavaScript puro neste desafio, pude aprofundar meus conhecimentos na linguagem e compreender melhor seu funcionamento. Ao invés de depender de bibliotecas externas, fui me desafiando a criar funcionalidades e interatividade a partir do zero, o que me proporcionou uma maior compreensão sobre a manipulação do DOM e o fluxo de eventos no navegador.
 
 Essa abordagem mostrou que nem sempre é necessário recorrer a soluções complexas para alcançar os resultados desejados. Com um código simples e bem estruturado, pude criar uma solução funcional, garantindo uma ótima experiência ao usuário. Reforço minha crença na importância de dominar os conceitos fundamentais das tecnologias que utilizamos, e como isso pode abrir portas para soluções mais eficientes e elegantes.
+
+## Estrutura de Arquivos
+
+Os arquivos do projeto estão organizados da seguinte forma:
+
+📁 projeto-formulario <br>
+├── 📄️ index.html <br>
+├── 📄️ styles.css <br>
+└── 📄️ script.js
 
 ## Funcionalidades
 
@@ -26,14 +35,4 @@ Além disso, foram implementadas as seguintes interações:
 1. Validação dos campos: antes de enviar o formulário, é feita uma verificação para garantir que os campos obrigatórios (nome, e-mail e mensagem) sejam preenchidos.
 2. Exibição de mensagens de erro: se algum campo obrigatório estiver em branco, uma mensagem de erro é exibida abaixo do campo correspondente.
 3. Exibição de mensagem de sucesso: caso todos os campos estejam preenchidos corretamente, é exibida uma mensagem de sucesso após o envio do formulário.
-
-## Estrutura de Arquivos
-
-Os arquivos do projeto estão organizados da seguinte forma:
-
-📁 projeto-formulario <br>
-├── 📄️ index.html <br>
-├── 📄️ styles.css <br>
-└── 📄️ script.js
-
 
