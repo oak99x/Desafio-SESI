@@ -11,7 +11,8 @@ navLinks.forEach((link) => {
 
     // Obtém a posição (offset) vertical da seção de destino
     const targetSection = document.querySelector(targetSectionId);
-    const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - 96;
+    const targetPosition =
+      targetSection.getBoundingClientRect().top + window.scrollY - 96;
 
     // Anima o rolagem (scroll) para a seção de destino
     window.scroll({
@@ -21,6 +22,29 @@ navLinks.forEach((link) => {
   });
 });
 
+// Mudar cor do input do form
+const form = document.getElementById("formBanner");
+const inputFields = form.querySelectorAll("input,textarea");
+
+inputFields.forEach((input) => {
+  input.addEventListener("input", () => {
+    if (input.value.trim() !== "") {
+      input.style.borderColor = "#7CA934";
+      // input.classList.add("filled");
+    } else {
+      // input.classList.remove("filled");
+      input.style.borderColor = "#ABBED1";
+    }
+  });
+});
+
+// Fazendo com que o input tel só aceite numeros
+const telInput = document.getElementById("tel");
+
+telInput.addEventListener("input", function () {
+  // Remove caracteres não numéricos (exceto números)
+  telInput.value = telInput.value.replace(/[^\d.-]+/g, "");
+});
 
 // Expandindo informacoes
 const toggleButtons = document.querySelectorAll(".toggle-button");
@@ -39,10 +63,27 @@ toggleButtons.forEach((button, index) => {
       icons[index].style.transform = "rotate(0deg)"; // Gira o ícone em 90 graus
     } else {
       // Se não estiver oculto, adiciona a classe "hidden" para ocultar o conteúdo
-    infoContents[index].classList.add("hidden");
-    icons[index].style.transform = "rotate(-45deg)"; // Gira o ícone de volta para a posição original
-    infoContents[index].classList.remove("show");
-    infoContents[index].style.margin = "0";
+      infoContents[index].classList.add("hidden");
+      icons[index].style.transform = "rotate(-45deg)"; // Gira o ícone de volta para a posição original
+      infoContents[index].classList.remove("show");
+      infoContents[index].style.margin = "0";
     }
   });
+});
+
+
+// Estilo para a notificação 
+const notification = document.getElementById("notification");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Impede o envio real do formulário
+
+  // Simula o envio do formulário e exibe a notificação
+  // Neste exemplo, a notificação será mostrada por 3 segundos
+  setTimeout(() => {
+    notification.classList.add('visible');
+    setTimeout(() => {
+      notification.classList.remove('visible');
+    }, 3000); // A notificação desaparecerá após 3 segundos (3000 milissegundos)
+  }, 0); // Usando 0 para simular o envio instantâneo do formulário
 });
