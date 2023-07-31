@@ -22,7 +22,7 @@ Os arquivos do projeto estão organizados da seguinte forma:
           └── 📄️ styles.css <br>
      ├── 📁 img <br>
      └── 📁 script <br>
-          └── 📄️ script.js
+          └── 📄️ script.js <br>
 └── 📄️ index.html <br>
 
 ## Funcionalidades
