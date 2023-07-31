@@ -16,14 +16,12 @@ Essa abordagem mostrou que nem sempre é necessário recorrer a soluções compl
 
 Os arquivos do projeto estão organizados da seguinte forma:
 
-📁 desafio-sesi <br>
-├── 📁 assets <br>
-     ├── 📁 css <br>
-          └── 📄️ styles.css <br>
-     ├── 📁 img <br>
-     └── 📁 script <br>
-          └── 📄️ script.js <br>
-└── 📄️ index.html <br>
+     📁 desafio-sesi <br>
+     ├── 📁 assets <br>
+          ├── 📁 css <br>
+          ├── 📁 img <br>
+          └── 📁 script <br>
+     └── 📄️ index.html <br>
 
 ## Funcionalidades
 
