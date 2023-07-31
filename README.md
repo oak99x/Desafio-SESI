@@ -16,10 +16,14 @@ Essa abordagem mostrou que nem sempre é necessário recorrer a soluções compl
 
 Os arquivos do projeto estão organizados da seguinte forma:
 
-📁 projeto-formulario <br>
-├── 📄️ index.html <br>
-├── 📄️ styles.css <br>
-└── 📄️ script.js
+📁 desafio-sesi <br>
+├── 📁 assets <br>
+     ├── 📁 css <br>
+          └── 📄️ styles.css <br>
+     ├── 📁 img <br>
+     └── 📁 script <br>
+          └── 📄️ script.js
+└── 📄️ index.html <br>
 
 ## Funcionalidades
 
